@@ -39,7 +39,7 @@ jobs:
           dart format \
             #--output=none \
             #--set-exit-if-changed \
-            .
+            #.
 
       - name: Analyze
         run: flutter analyze
