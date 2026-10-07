@@ -4,7 +4,7 @@ on:
 
   push:
     branches:
-      - main2
+      - main
 
   workflow_dispatch:
     inputs:
@@ -48,7 +48,7 @@ jobs:
       github.event.inputs.platform == 'android' ||
       github.event.inputs.platform == 'both'
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     env:
 
@@ -65,7 +65,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
 
       - name: Setup Flutter
@@ -170,7 +170,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
 
       - name: Setup Flutter
