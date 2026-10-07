@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+import 'package:cicd_demo/core/log/print_log.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      print("Counter $_counter");
+      PrintLog.print("Counter $_counter");
       _counter++;
     });
   }
